@@ -1,0 +1,41 @@
+<h3 class="text-center m30"> Total operation performed: {{operation}}</h3>
+<div class="card">
+    <div class="input-boxes m20">
+        <input type="number" name="workoutName" id="workout-name" placeholder="Enter number one" [(ngModel)]="inputObj.a" />
+        <b class="operator">{{selectedOperator}}</b>
+        <input type="number" placeholder="Enter number two" [(ngModel)]="inputObj.b" />
+    </div>
+    <div class="math-operators">
+        <button (click)="handleMathOperation('add')">+</button>
+        <button (click)="handleMathOperation('sub')">-</button>
+        <button (click)="handleMathOperation('mul')">*</button>
+        <button (click)="handleMathOperation('div')">/</button>
+    </div>
+    <div class="card-footer">
+        <button class="reset-button" (click)="reset()">Reset</button>
+        <h3 class="result">Output : {{result}}</h3>
+    </div>
+</div>
+
+<div class="scrollit">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">A</th>
+                <th scope="col">B</th>
+                <th scope="col">Operation</th>
+                <th scope="col">Result</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let row of info;let i = index;">
+                <td>{{row.a}}</td>
+                <td>{{row.b}}</td>
+                <td>{{row.operation}}</td>
+                <td>{{row.result}}</td>
+                <td> <button class="update-button" (click)="update(i)">Update</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

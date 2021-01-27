@@ -1,0 +1,138 @@
+.example-section {
+    margin: 12px 0;
+}
+
+.example-margin {
+    margin: 0 12px;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 4px;
+}
+
+.m30 {
+    margin-top: 30px;
+}
+
+.m20 {
+    margin-top: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.card {
+    background: #ffffff;
+    width: 400px;
+    margin: auto;
+    box-sizing: 0 6px 8px 0 black;
+    box-shadow: 0 9px 16px 0 rgba(0, 106, 194, .2);
+    padding: 15px;
+    border-radius: 3px;
+}
+
+.math-operators {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 23px;
+    margin-bottom: 40px;
+}
+
+.math-operators button {
+    background: darkgreen;
+    color: #ffffff;
+    padding: 3px 15px;
+}
+
+.reset-button {
+    border: 0px;
+    background: red;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 5%;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-boxes input {
+    background: lightgray;
+    border: 0px;
+    padding: 4px;
+    height: 36px;
+    width: 47%;
+}
+
+.input-boxes {
+    display: flex;
+    align-items: center;
+}
+
+.operator {
+    margin: 15px;
+}
+
+.result {
+    margin: 0px;
+}
+
+.table {
+    border: 1px solid #dddddd;
+    border-collapse: collapse;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.scrollit {
+    overflow-y: auto;
+    max-height: 250px;
+    min-height: 50px;
+    width: 50%;
+    margin: auto;
+    margin-top: 15px;
+    background: #ffffff;
+    box-shadow: inset 0 0 5px grey;
+}
+
+th {
+    background: grey;
+    position: sticky;
+    color: #ffffff;
+    text-align: center;
+    top: -1px;
+    font-style: normal;
+    /* Don't forget this, required for the stickiness */
+    /* box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4); */
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: grey;
+    border-radius: 10px;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
+}
